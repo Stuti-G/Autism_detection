@@ -1,0 +1,6 @@
+ultralytics
+yt_dlp
+matplotlib
+autodistill
+roboflow
+autodistill_grounding_dino
