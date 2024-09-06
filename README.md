@@ -16,7 +16,7 @@ To begin, we need videos for training or testing the model. These videos are dow
 python Downloading_vid.py
 ```
 ## 3. Challenges with Direct YOLO Inference:
-If we use a pre-trained YOLO model directly, it can only detect both "Child" and "Therapist" in a single category/label, which is not ideal for this task. The goal is to distinguish between the two, so the model needs to be trained to recognize them as distinct categories.
+If we use a pre-trained YOLO model directly, it can only detect both "Child" and "Therapist" under a single class - Person, which is not ideal for this task. The goal is to distinguish between the two, so the model needs to be trained to recognize them as distinct categories.
 
 ## 4. Dataset Creation:
 To address the above issue, it is crucial to create a custom dataset where "Child" and "Therapist" are treated as separate classes. For this, two key steps are involved:
