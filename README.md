@@ -35,6 +35,8 @@ python Labelling_data.py
 ```
 
 ## 4. Dataset Structure:
+Refer [this link](https://colab.research.google.com/drive/1r650PWtlYWXAOkk6ZSycntrLkr05-_jM?usp=sharing) to download the dataset.
+
 After labeling, the dataset is organized into two main parts: training and validation sets.
 <details open> <summary>Dataset Structure: (click to expand)</summary>
   
@@ -49,6 +51,7 @@ After labeling, the dataset is organized into two main parts: training and valid
 ```
 </details>
 Each image has a corresponding label file, containing the coordinates of bounding boxes and the class ("Child" or "Therapist").
+
 
 ## 5. Training:
 Now that the dataset is prepared, we move on to training a YOLOv8 model. This is done using the Train_dino.py script. YOLOv8 is initialized with a configuration file (**data.yaml**) that specifies details about the dataset (paths to images and labels, class names, etc.).
@@ -65,6 +68,8 @@ python Train_dino.py
 
 ## 6. Inference:
 Once the model is trained, it can be used to test new videos. This is done using the test_dino.py script, which runs inference on the test videos. The script processes the video frames, applying the trained model to detect and track both "Child" and "Therapist", outputting the bounding boxes for each.
+### 6.2 Tesing dataset
+The checkpoints for the inference can be downloaded in [this link](https://drive.google.com/drive/folders/1_UKlU57p9oPJttMiVnKQMK_r6XyB_RBD?usp=sharing).
 
 ```
 python test_dino.py
