@@ -7,7 +7,7 @@ This project presents an optimized inference pipeline that processes long-durati
 ## 1. Installation and Dependencies.
 To install the package, run the following command:
 ```
-pip install to-requirements.txt
+pip install -r requirements.txt
 ```
 
 ## 2. Downloading Required Videos:
