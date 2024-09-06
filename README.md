@@ -38,7 +38,7 @@ python Labelling_data.py
 ```
 
 ## 4. Dataset Structure:
-Refer [this link](https://colab.research.google.com/drive/1r650PWtlYWXAOkk6ZSycntrLkr05-_jM?usp=sharing) to download the dataset.
+Refer [this link](https://drive.google.com/drive/folders/1j4CfSbdYilYLs7eoCuCVfpaCJyADdBoT?usp=sharing) to download the dataset.
 
 After labeling, the dataset is organized into two main parts: training and validation sets.
 <details open> <summary>Dataset Structure: (click to expand)</summary>
