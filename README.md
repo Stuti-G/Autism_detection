@@ -1,6 +1,9 @@
 # Autism_detection
 This project presents an optimized inference pipeline that processes long-duration videos, detecting and predicting the bounding boxes for "Child" and "Therapist" separately. The pipeline also includes strategies to enhance model performance. Below is a detailed explanation of the workflow, along with reasons for each step and the purpose of the corresponding files.
 
+- [Detailed Documentation](https://docs.google.com/document/d/1smNpC3zGS_jY2iwGUR4oedsOje28-7_6LUalLjeHGUE/edit?usp=sharing)
+- [Google colab notebook](https://colab.research.google.com/drive/1r650PWtlYWXAOkk6ZSycntrLkr05-_jM?usp=sharing)
+
 ## 1. Installation and Dependencies.
 To install the package, run the following command:
 ```
@@ -70,15 +73,18 @@ python Train_dino.py
 Once the model is trained, it can be used to test new videos. This is done using the test_dino.py script, which runs inference on the test videos. The script processes the video frames, applying the trained model to detect and track both "Child" and "Therapist", outputting the bounding boxes for each.
 ### 6.2 Tesing dataset
 The checkpoints for the inference can be downloaded in [this link](https://drive.google.com/drive/folders/1_UKlU57p9oPJttMiVnKQMK_r6XyB_RBD?usp=sharing).
-
 ```
 python test_dino.py
 ```
+
+* The above script is tested on the videos which can be found [here](https://drive.google.com/drive/folders/1-6ukRkzlT3IIOdKLtBuLZw1rUdb0o1ze?usp=sharing) 
+* The resulted output videos can be found [here](https://drive.google.com/drive/folders/10ke5mmzHe8W7zLB8MCFbBE_cwgH0RVEq?usp=sharing) 
 
 ## 7. Run-Time Results:
 * All scripts and models are run in the
 Jupyter Notebook: [Main.ipynb](https://colab.research.google.com/drive/1r650PWtlYWXAOkk6ZSycntrLkr05-_jM?usp=sharing), which contains run-time results. 
 * This notebook shows how the model performs during training and inference, providing logs and visual results for bounding box predictions.
+ 
 
 #  Strategies to Improve Model Performance:
 Several strategies were employed to further enhance the model’s accuracy and generalization abilities:
